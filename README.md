@@ -9,3 +9,9 @@ React - The Complete Guide (incl Hooks, React Router, Redux) Maximilian Schwarzm
 <https://github.com/academind/react-complete-guide-code/tree/01-getting-started/code/react-vs-vanilla-js-example>
 
 <https://academind.com/tutorials/angular-vs-react-vs-vue-my-thoughts>
+
+<https://jsbin.com/?js,console>
+
+## Sections
+
+[Section 2 Javascript Refresher](Section_2_Javascript_Refresher.md)
