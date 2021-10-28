@@ -51,6 +51,8 @@ Project configuration and dependencies
 
 * Dependecies
   * react
+    * This dependency converts JSX to HTML
+    * In old react projects, it was mandatory to import it in each file, but now with create-react-app+ its not necessary.
   * react-dom
 
 ### index.js
@@ -86,4 +88,50 @@ function App() {
   );
 }
 export default App;
+```
+
+Old react return, without create-react-app+ needs to return elements like this
+
+Import react dependency
+
+> import React from 'react';
+
+Call React.createElement() function
+
+> return React.createElement(Element to be created, {dynamic data}, inner tags})
+
+Example
+
+```js
+return React.createElement(
+  <div>, 
+  {} ,
+  React.createElement(<h2>, {},"Let's get started!"}),
+  React.createElement(Expenses, {items: expenses},"Let's get started!"})
+  );
+```
+
+This is the reason why we only have one root element
+
+## Organizing components
+
+For big projects, it's recommended to separate logic components and UI components
+
+```txt
+│   App.js
+│   index.css
+│   index.js
+│
+└───Components
+    ├───Expenses
+    │       ExpenseDate.css
+    │       ExpenseDate.js
+    │       ExpenseItem.css
+    │       ExpenseItem.js
+    │       Expenses.css
+    │       Expenses.js
+    │
+    └───UI
+            Card.css
+            Card.js
 ```

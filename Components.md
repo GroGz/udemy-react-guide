@@ -10,6 +10,9 @@
 * Component tag start with upercase
 * Empty tags can be autoclosed \<Tag />
 * Component function returns only one root element
+* Components can be declared with arrow functions
+  * const App = () => {}
+  * const Expenses = (props) => {} 
 
 ## Using component
 
@@ -65,7 +68,7 @@ A component is a js function, then we can pass parameters called _props_
 
 > function ExpenseItem(props) {
 
-_Props_ contains all the attributes declared in the JSX tag, and this is the vay to pass parameters from the tag to the component structure
+_Props_ contains all the attributes declared in the JSX tag, and this is the way to pass parameters from the tag to the component structure
 
 ```js
 const expenses = [

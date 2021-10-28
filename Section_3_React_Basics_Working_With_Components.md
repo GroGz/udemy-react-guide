@@ -9,8 +9,9 @@ React is based in components, reusable building blocks composed by HTML, CSS and
 
 ## Code
 
-1. [Project](./Section_3_React_Basics_Working_With_Components/01-starting-setup)
+1. [Start roject](./Section_3_React_Basics_Working_With_Components/01-starting-setup)
 2. [Extra files](./Section_3_React_Basics_Working_With_Components/extrafiles)
+3. [Final project](https://github.com/academind/react-complete-guide-code/tree/03-react-basics-working-with-components)
 
 ## Docs
 
