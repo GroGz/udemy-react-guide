@@ -87,8 +87,3 @@ function App() {
 }
 export default App;
 ```
-
-### Tips
-
-* Component files no need extension to be imported
-  * import App from './App';
