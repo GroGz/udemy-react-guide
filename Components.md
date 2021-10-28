@@ -8,6 +8,7 @@
 * Component files no need extension to be imported
   * import App from './App';
 * Component tag start with upercase
+* Empty tags can be autoclosed \<Tag />
 * Component function returns only one root element
 
 ## Using component
@@ -91,3 +92,79 @@ Component structure shows dynamic data inisde curly brackets, it can be a var/co
 > \<h2>{expenseTitle}\</h2>
 > \<h2>{1+1}\</h2>
 > \<h2>{expenseDate.toISOString()}\</h2>
+
+## Splitting Components
+
+When components grow up, we can split them
+
+```js
+import "./ExpenseItem.css";
+
+function ExpenseItem(props) {
+  const month = props.date.toLocaleString("es-ES", { month: "long" });
+  const day = props.date.toLocaleString("es-ES", { day: "2-digit" });
+  const year = props.date.getFullYear();
+
+  return (
+    <div className="expense-item">
+      <div>
+        <div>{day}</div>
+        <div>{month}</div>
+        <div>{year}</div>
+      </div>
+      <div className="expense-item__description">
+      ...
+
+export default ExpenseItem;
+```
+
+But we have to pass _props_ to the next component
+
+```js
+import ExpenseDate from "./ExpenseItem";
+import "./ExpenseItem.css";
+
+function ExpenseItem(props) {
+
+  return (
+    <div className="expense-item">
+      <ExpenseDate date={props.date}/>
+      <div className="expense-item__description">
+      ...
+
+export default ExpenseItem;
+```
+
+## Composition
+
+Split requires composition, and because there is only one root element, there are a lot of components with a \<div> tag as a container. These containers can configured to be common an reduce duplicated code
+
+Card.css
+
+```css
+.card {
+  border-radius: 12px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+}
+```
+
+Those proporties can be removed from other files as Expenses.css and ExpenseItem.css
+
+```js
+import "./Card.css";
+
+function Card(props) {
+  const classes = "card " + props.className;
+  return <div className={classes}>{props.children}</div>;
+}
+
+export default Card;
+```
+
+To merge common style and wrapped style, we need to join both classes
+
+> const classes = "card " + props.className;
+
+To mantain the dynamic data inside the wrapper, we have to use props.children, a reserved prop with the data for the inner components.
+
+> return \<div className={classes}>{props.children}</div>;
