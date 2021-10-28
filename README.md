@@ -22,9 +22,11 @@ React - The Complete Guide (incl Hooks, React Router, Redux) Maximilian Schwarzm
 
 1. Getting Started
 2. [Javascript Refresher](Section_2_Javascript_Refresher.md)
-3. [React Basics Working With Components](Section_3_React_Basics_Working_With_Components)
+3. [React Basics Working With Components](Section_3_React_Basics_Working_With_Components.md)
+4. [Section_4_React_State_Working_with_Events](Section_4_React_State_Working_with_Events.md)
 
 ## Docs
 
 1. [Enviroment & Config](Enviroment&Config.md)
 2. [Components](Components.md)
+3. [State](State.md)

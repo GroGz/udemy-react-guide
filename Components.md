@@ -12,7 +12,7 @@
 * Component function returns only one root element
 * Components can be declared with arrow functions
   * const App = () => {}
-  * const Expenses = (props) => {} 
+  * const Expenses = (props) => {}
 
 ## Using component
 
