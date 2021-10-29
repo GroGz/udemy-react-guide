@@ -79,7 +79,7 @@ Imports
 
 ## Classes
 
-Classes have mnethods, properties, constructors, can extend from another class, and are initialized by __new__
+Classes have methods, properties, constructors, can extend from another class, and are initialized by __new__
 
 ```javascript
 class Person extends Human {
