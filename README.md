@@ -18,13 +18,15 @@ React - The Complete Guide (incl Hooks, React Router, Redux) Maximilian Schwarzm
 * Course code
   * <https://github.com/academind/react-complete-guide-code/tree/03-react-basics-working-with-components/code>
   * <https://github.com/academind/react-complete-guide-code/tree/04-react-state-events>
+  * <https://github.com/academind/react-complete-guide-code/tree/05-rendering-lists-conditional-content>
 
 ## Sections
 
 1. Getting Started
 2. [Javascript Refresher](Section_2_Javascript_Refresher.md)
 3. [React Basics Working With Components](Section_3_React_Basics_Working_With_Components.md)
-4. [Section 4 React State Working with Events](Section_4_React_State_Working_with_Events.md)
+4. [React State Working with Events](Section_4_React_State_Working_with_Events.md)
+5. [Render List & Conditional Content](Section_5_RenderList_&_Conditional_Content.md)
 
 ## Docs
 
