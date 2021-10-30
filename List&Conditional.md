@@ -43,7 +43,7 @@ To the previous ExpenseItem data, we have to add another one, _key_
 
 Without it, the browser refreshes the list but can override elements instead of repaint all the list, with bugs like this
 
-![images](images\s5-bug-list.PNG)
+![images](images/s5-bug-list.PNG)
 
 New elements are have the first original title, and the old one show __New Desk (Wooden)__
 
@@ -57,4 +57,16 @@ In this case, our elements has their own id, but if they haven't, some javascrip
                 title={expense.title}
 ```
 
-To add new elements to the list, _useState_ is used again, with previous state update strategy.  
+To add new elements to the list, _useState_ is used again, with previous state update strategy.
+
+```js
+function App() {
+ 
+  const [expenses, setExpenses] = useState (DUMMY_EXPENSES);
+
+  const addExpenseHandler = expense => {
+    setExpenses((prevExpenses) => {
+      return [expense, ...prevExpenses];
+    });
+  }
+```

@@ -7,4 +7,4 @@
 
 ## Docs
 
-1. [Lists & Conditional](List&Condiyional.md)
+1. [Lists & Conditional](List%26Condiyional.md)
