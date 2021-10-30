@@ -149,7 +149,7 @@ const titleChangeHandler = (event) => {
   };
   ```
 
-  _prevState_ ensure that it is the last updated value
+  _prevState_ ensure that it is the last updated value. I applies when we use multiple useState
 
 ## Form. Two-way binding
 
