@@ -70,3 +70,72 @@ function App() {
     });
   }
 ```
+
+## Conditional
+
+### Conditonal block
+
+```js
+return (
+    <Card className="expenses">
+      <div>
+        <ExpensesFilter ... />
+      </div>
+      {filteredExpenses.length = 0 ? (<p>Not found</p>) : (filteredExpenses.map((expense) =>
+        (
+          <ExpenseItem
+          ...
+          ></ExpenseItem>
+        )
+      ))}
+    </Card>
+  );
+}
+```
+
+There is a javascript trick than can be used.
+
+```js
+return (
+    <Card className="expenses">
+      <div>
+        <ExpensesFilter ... />
+      </div>
+      {filteredExpenses.length = 0 && (<p>Not found</p>) }
+      {filteredExpenses.length > 0 && (filteredExpenses.map((expense) =>
+        (
+          <ExpenseItem
+          ...
+          ></ExpenseItem>
+        )
+      ))}
+    </Card>
+  );
+}
+```
+
+Second condition is always true because exists, and this expression returns second condition.
+
+There is a third way that gives a better organization, create a content var and set the value out the JSX block
+
+```js
+ let expensesContent = <p>Not found</p>;
+
+  if(filteredExpenses.length > 0) { 
+    expensesContent = (filteredExpenses.map((expense) =>
+      (<ExpenseItem
+        ...
+        ></ExpenseItem>
+      )
+    ));
+  };
+  
+  return (
+    <Card className="expenses">
+      <div>
+        <ExpensesFilter ... />
+      </div>
+      {expensesContent}
+    </Card>
+  );
+```
