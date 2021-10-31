@@ -19,6 +19,7 @@ React - The Complete Guide (incl Hooks, React Router, Redux) Maximilian Schwarzm
   * <https://github.com/academind/react-complete-guide-code/tree/03-react-basics-working-with-components/code>
   * <https://github.com/academind/react-complete-guide-code/tree/04-react-state-events>
   * <https://github.com/academind/react-complete-guide-code/tree/05-rendering-lists-conditional-content>
+  * <https://github.com/academind/react-complete-guide-code/tree/06-styling>
 
 ## Sections
 
@@ -27,6 +28,7 @@ React - The Complete Guide (incl Hooks, React Router, Redux) Maximilian Schwarzm
 3. [React Basics Working With Components](Section_3_React_Basics_Working_With_Components.md)
 4. [React State Working with Events](Section_4_React_State_Working_with_Events.md)
 5. [Render List & Conditional Content](Section_5_RenderList_&_Conditional_Content.md)
+6. [Dynamic Style And CSS Modules](Section_6_Dynamic_Style_And_CSS_Modules.md)
 
 ## Docs
 
@@ -34,3 +36,4 @@ React - The Complete Guide (incl Hooks, React Router, Redux) Maximilian Schwarzm
 2. [Components](Components.md)
 3. [Events & State](Events%26State.md)
 4. [List & Conditional](List%26Conditional.md)
+5. [Dynamic Styles & Css Modules](DynamicStyles%26CssModules.md)
