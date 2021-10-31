@@ -15,6 +15,12 @@ React - The Complete Guide (incl Hooks, React Router, Redux) Maximilian Schwarzm
 * Javascript online vm
   * <https://jsbin.com/?js,console>
 
+* Styled components (Css)
+  * <https://styled-components.com/>
+
+* Module CSS
+  * <https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/>
+
 * Course code
   * <https://github.com/academind/react-complete-guide-code/tree/03-react-basics-working-with-components/code>
   * <https://github.com/academind/react-complete-guide-code/tree/04-react-state-events>

@@ -174,3 +174,34 @@ const double = numbers.map(el => 2 * el);
 console.log(numbers);
 console.log(double);
 ```
+
+## Template literlas (backstick)
+
+Text with dynamic content
+
+* Text inside bacstick  _``_
+* Var, function or js expresion inside _${}_
+  
+  ```js
+  `Hello ${name}`;
+  `Hello ${getGreeting('WW')}`
+  `Hello ${isTrue(x) ? name : 'XXX'}`;
+  ```
+
+* Nested expressions are valid
+  
+  ```js
+  `Hello GroGZ ${`${isTrue(false) ? "YYY" : "XXX"}`}  `;
+  ```
+
+* Tags allow you to parse template literals with a function.
+  
+  ```js
+  function myTag(strings, personExp, ageExp) {
+    ...
+  }
+  let output = myTag`That ${ person } is a ${ age }.`;
+  ```
+
+  * The first argument of a tag function contains an array of string values.
+  * The remaining arguments are related to the expressions.

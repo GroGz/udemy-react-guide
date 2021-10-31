@@ -16,6 +16,7 @@
 * Dynamic data is converted into value whith varname surrounded with {}
   * \<div className={classes} style={{ height: varToConvert }}>{props.children}</div>;
     * Double curly brackets for attributes that has curly brackets.
+* _.children_ contains inner content of parent tag.
 
 ## Using component
 
@@ -156,7 +157,7 @@ Card.css
 }
 ```
 
-Those proporties can be removed from other files as Expenses.css and ExpenseItem.css
+Those properties can be removed from other files as Expenses.css and ExpenseItem.css
 
 ```js
 import "./Card.css";
@@ -173,6 +174,14 @@ To merge common style and wrapped style, we need to join both classes
 
 > const classes = "card " + props.className;
 
-To mantain the dynamic data inside the wrapper, we have to use props.children, a reserved prop with the data for the inner components.
+To paint the dynamic data inside the wrapper, we have to use props.children, a reserved prop with the data of  inner components.
 
 > return \<div className={classes}>{props.children}</div>;
+
+We can use _prop.children_ to use generics buttons.
+
+> \<Button type="submit">Add Goal</Button>
+
+Button text _Add Goal_ is passed by _props.children_
+
+> \<button type={props.type} className="button" onClick={props.onClick}>{props.children}</button>
