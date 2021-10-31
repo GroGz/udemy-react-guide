@@ -13,6 +13,9 @@
 * Components can be declared with arrow functions
   * const App = () => {}
   * const Expenses = (props) => {}
+* Dynamic data is converted into value whith varname surrounded with {}
+  * \<div className={classes} style={{ height: varToConvert }}>{props.children}</div>;
+    * Double curly brackets for attributes that has curly brackets.
 
 ## Using component
 
@@ -80,8 +83,15 @@ const expenses = [
     }
 ];
 
-...
+Component structure shows dynamic data inside curly brackets, it can be a var/const, an js expression or a function result
+> \<h2>{expenseTitle}\</h2>
+> \<h2>{1+1}\</h2>
+> \<h2>{expenseDate.toISOString()}\</h2>
+> \<div className="chart-bar__fill" style={{ height: barFillHeight }} ></div>
 
+When we want to add info to an attribute that has curly brackets, use double curly brackets. 
+
+...
 <div>
       <h2>Let's get started!</h2>
       <ExpenseItem
@@ -90,11 +100,6 @@ const expenses = [
         date={expenses[0].date}
       ></ExpenseItem>
 ```
-
-Component structure shows dynamic data inisde curly brackets, it can be a var/const, an js expression or a function result
-> \<h2>{expenseTitle}\</h2>
-> \<h2>{1+1}\</h2>
-> \<h2>{expenseDate.toISOString()}\</h2>
 
 ## Splitting Components
 
