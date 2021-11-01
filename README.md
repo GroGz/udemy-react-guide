@@ -40,6 +40,7 @@ React - The Complete Guide (incl Hooks, React Router, Redux) Maximilian Schwarzm
 5. [Render List & Conditional Content](Section_5_RenderList_&_Conditional_Content.md)
 6. [Dynamic Style And CSS Modules](Section_6_Dynamic_Style_And_CSS_Modules.md)
 7. [Debugging](Section_7_Debugging.md)
+8. [Practice User Project Modal.md](Section_8_Practice_User_Project_Modal.md)
 
 ## Docs
 
