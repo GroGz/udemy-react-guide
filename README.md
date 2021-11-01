@@ -21,6 +21,9 @@ React - The Complete Guide (incl Hooks, React Router, Redux) Maximilian Schwarzm
 * Module CSS
   * <https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/>
 
+* React Developer Tools
+  * <https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=es>
+
 * Course code
   * <https://github.com/academind/react-complete-guide-code/tree/03-react-basics-working-with-components/code>
   * <https://github.com/academind/react-complete-guide-code/tree/04-react-state-events>
