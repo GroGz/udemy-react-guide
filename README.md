@@ -41,6 +41,7 @@ React - The Complete Guide (incl Hooks, React Router, Redux) Maximilian Schwarzm
 6. [Dynamic Style And CSS Modules](Section_6_Dynamic_Style_And_CSS_Modules.md)
 7. [Debugging](Section_7_Debugging.md)
 8. [Practice User Project Modal.md](Section_8_Practice_User_Project_Modal.md)
+9. [Fragments, Portals and "Refs"](Section_9_Fragments_Portals_Refs.md)
 
 ## Docs
 
@@ -50,3 +51,4 @@ React - The Complete Guide (incl Hooks, React Router, Redux) Maximilian Schwarzm
 4. [List & Conditional](List%26Conditional.md)
 5. [Dynamic Styles & Css Modules](DynamicStyles%26CssModules.md)
 6. [Debug](Debug.md)
+7. [Fragments, Portals and "Refs](Fragments%26Portals%26Refs.md)
