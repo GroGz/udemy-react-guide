@@ -31,7 +31,7 @@ const CourseInput = props => {
 
 React dependency. Create a new component using the specific method for that component _styled.button_.
 
-Based in tag literal tempalte?  ([Javascript Refresher](Section_2_Javascript_Refresher.md))
+Based in tag literal template?  ([Javascript Refresher](Section_2_Javascript_Refresher.md))
 
 ```js
 import styled from 'styled-components';
@@ -201,3 +201,33 @@ Normal media queries, with selector
   }
 }
 ```
+
+## Wrappers and classes
+
+Wrappers elements have their own classes, but if we want to add more specifics classes, we have to pass them as we do with _props.children_
+
+```js
+import classes from './Card.module.css';
+
+function Card(props) {
+  return <div className={`${classes.card} ${props.className}`}>{props.children}</div>;
+}
+
+export default Card;
+```
+
+```js
+return (
+    <Card className={classes.input}>
+      <form onSubmit={addUserHandler}>
+        <label htmlFor="username">Username</label>
+        <input id="username" type="text" />
+        <button type="submit">Add User</button>
+      </form>
+    </Card>
+  );
+```
+
+_classes.input_ pass as _props.className, then we get both classes loaded
+
+> \<div class="Card_card__3QyDm AddUser_input__3MAMJ">...</div>

@@ -179,7 +179,7 @@ console.log(double);
 
 Text with dynamic content
 
-* Text inside bacstick  _``_
+* Text inside backstick  _``_
 * Var, function or js expresion inside _${}_
   
   ```js
