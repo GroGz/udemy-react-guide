@@ -30,6 +30,9 @@ React - The Complete Guide (incl Hooks, React Router, Redux) Maximilian Schwarzm
   * <https://github.com/academind/react-complete-guide-code/tree/05-rendering-lists-conditional-content>
   * <https://github.com/academind/react-complete-guide-code/tree/06-styling>
   * <https://github.com/academind/react-complete-guide-code/tree/07-debugging>
+  * <https://github.com/academind/react-complete-guide-code/tree/08-practice-project>
+  * <https://github.com/academind/react-complete-guide-code/tree/09-fragments-portals-refs>
+  * <https://github.com/academind/react-complete-guide-code/tree/10-side-effects-reducers-context-api>
 
 ## Sections
 
@@ -42,6 +45,7 @@ React - The Complete Guide (incl Hooks, React Router, Redux) Maximilian Schwarzm
 7. [Debugging](Section_7_Debugging.md)
 8. [Practice User Project Modal.md](Section_8_Practice_User_Project_Modal.md)
 9. [Fragments, Portals and "Refs"](Section_9_Fragments_Portals_Refs.md)
+10. [Side effects, Reducers and Context API](Section_10_Side_Effects_Reducers_Context_API.md)
 
 ## Docs
 
@@ -52,3 +56,4 @@ React - The Complete Guide (incl Hooks, React Router, Redux) Maximilian Schwarzm
 5. [Dynamic Styles & Css Modules](DynamicStyles%26CssModules.md)
 6. [Debug](Debug.md)
 7. [Fragments, Portals and "Refs](Fragments%26Portals%26Refs.md)
+8. [Side effects, Reducers and Context API](SideEffects%26Reducers%26Context.md)
