@@ -10,6 +10,10 @@ Only one root element
 
 Typo or non existing function
 
+> Nothing was returned from render. This usually means a return statement is missing
+
+Return or parentheses missing in a JSX _component_
+
 ## Warnings
 
 Some errors doesn't appear as compilation error, only as warning, but it can affect. For example, if we add all list elements with the same id, we will get unexpected behaviours.

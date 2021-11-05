@@ -185,3 +185,12 @@ We can use _prop.children_ to use generics buttons.
 Button text _Add Goal_ is passed by _props.children_
 
 > \<button type={props.type} className="button" onClick={props.onClick}>{props.children}</button>
+
+## Fragments, Portals and Refs
+
+* Fragment: Light wrapper
+* Portal: Set component in the correct node tree place
+* Ref: Skip unnecessary _state_ to read values from HTML tag, as input.
+  * _Uncontrolled components_ because React doesn't control the elemnt state
+
+[Fragments, Portals and "Refs](Fragments%26Portals%26Refs.md)

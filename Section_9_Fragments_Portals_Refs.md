@@ -1,8 +1,4 @@
-# Debug
-
-## Resource
-
-1. [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=es)
+# Fragments & Portals & Refs
 
 ## Code
 
@@ -10,4 +6,4 @@
 
 ## Docs
 
-1. [Debug](Debug.md)
+1. [Fragments, Portals and "Refs](Fragments%26Portals%26Refs.md)

@@ -54,6 +54,8 @@ Project configuration and dependencies
     * This dependency converts JSX to HTML
     * In old react projects, it was mandatory to import it in each file, but now with create-react-app+ its not necessary.
   * react-dom
+    * Interact with dom
+      * Portals
   * styled-components
     * Exclusive css for a component
     * npm install --save styled-components
