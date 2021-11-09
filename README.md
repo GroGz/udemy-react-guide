@@ -56,4 +56,4 @@ React - The Complete Guide (incl Hooks, React Router, Redux) Maximilian Schwarzm
 5. [Dynamic Styles & Css Modules](DynamicStyles%26CssModules.md)
 6. [Debug](Debug.md)
 7. [Fragments, Portals and "Refs](Fragments%26Portals%26Refs.md)
-8. [Side effects, Reducers and Context API](SideEffects%26Reducers%26Context.md)
+8. [Side effects useEffect](SideEffects.md)

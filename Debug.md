@@ -14,6 +14,10 @@ Typo or non existing function
 
 Return or parentheses missing in a JSX _component_
 
+> Uncaught Error: Too many re-renders. React limits the number of renders to prevent an infinite loop.
+
+Loop of component evaluation. UseEffects
+
 ## Warnings
 
 Some errors doesn't appear as compilation error, only as warning, but it can affect. For example, if we add all list elements with the same id, we will get unexpected behaviours.

@@ -6,4 +6,4 @@
 
 ## Docs
 
-1. [Side effects, Reducers and Context API](SideEffects%26Reducers%26Context.md)
+1. [Side effects useEffect](SideEffects.md)
