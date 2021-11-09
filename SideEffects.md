@@ -4,7 +4,7 @@ Every action to respond an action is a side effect.
 
 React handles how data is painted at the screen, and how _components_ communicate with other _components_, but in an application, there are more jobs to be done, this jobs and their results, are `side effects`. For example, _http_ calls are outside React controll, and we have to be careful with them because they can produce unexpected behaviours.
 
-One side effect is that every time the app resets, we lose all the _states_. 
+One side effect is that every time the app resets, we lose all the _states_.
 
 ```js
 function App() {

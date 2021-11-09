@@ -151,6 +151,8 @@ const titleChangeHandler = (event) => {
 
   _prevState_ ensure that it is the last updated value. I applies when we use multiple useState
 
+  For complex _states_ or that depnds on another _states_ use [Reducers](Reducers.md)
+
 ## Form. Two-way binding
 
 The best place to check the submit event is in the \<form></form> tag, because button has its own implemented behaviour in the browser. Although submit event launch a web reload, this is not desirable and we can disable it.

@@ -7,3 +7,4 @@
 ## Docs
 
 1. [Side effects useEffect](SideEffects.md)
+2. [Reducers](Reducers.md)

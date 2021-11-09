@@ -57,3 +57,4 @@ React - The Complete Guide (incl Hooks, React Router, Redux) Maximilian Schwarzm
 6. [Debug](Debug.md)
 7. [Fragments, Portals and "Refs](Fragments%26Portals%26Refs.md)
 8. [Side effects useEffect](SideEffects.md)
+9. [Reducers](Reducers.md)
