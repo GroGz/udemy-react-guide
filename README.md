@@ -4,6 +4,8 @@ React - The Complete Guide (incl Hooks, React Router, Redux) Maximilian Schwarzm
 
 <https://www.udemy.com/course/react-the-complete-guide-incl-redux/>
 
+[What is React?](slides.pdf)
+
 ## Resources
 
 * Javascript vs React
@@ -58,3 +60,5 @@ React - The Complete Guide (incl Hooks, React Router, Redux) Maximilian Schwarzm
 7. [Fragments, Portals and "Refs](Fragments%26Portals%26Refs.md)
 8. [Side effects useEffect](SideEffects.md)
 9. [Reducers](Reducers.md)
+10. [Context API](ContextApi.md)
+11. [Hooks](Hooks.md)

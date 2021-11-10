@@ -83,6 +83,7 @@ const expenses = [
       date: new Date(2020, 7, 14),
     }
 ];
+```
 
 Component structure shows dynamic data inside curly brackets, it can be a var/const, an js expression or a function result
 > \<h2>{expenseTitle}\</h2>
@@ -90,9 +91,9 @@ Component structure shows dynamic data inside curly brackets, it can be a var/co
 > \<h2>{expenseDate.toISOString()}\</h2>
 > \<div className="chart-bar__fill" style={{ height: barFillHeight }} ></div>
 
-When we want to add info to an attribute that has curly brackets, use double curly brackets. 
+When we want to add info to an attribute that has curly brackets, use double curly brackets.
 
-...
+```js
 <div>
       <h2>Let's get started!</h2>
       <ExpenseItem

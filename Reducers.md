@@ -117,7 +117,7 @@ useEffect(() => {
   }, [emailState, passwordState]);
 ```
 
-This solution can be better, because we are validating again password every time, even when we add more chars when password has more than one char. 
+This solution can be better, because we are validating again password every time, even when we add more chars when password has more than one char.
 
 `Object destructuring`
 
