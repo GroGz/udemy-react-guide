@@ -18,6 +18,10 @@ Return or parentheses missing in a JSX _component_
 
 Loop of component evaluation. UseEffects
 
+> index.js:1 Warning: Function components cannot be given refs. Attempts to access this ref will fail. Did you mean to use React.forwardRef()?
+
+`useRefs`
+
 ## Warnings
 
 Some errors doesn't appear as compilation error, only as warning, but it can affect. For example, if we add all list elements with the same id, we will get unexpected behaviours.

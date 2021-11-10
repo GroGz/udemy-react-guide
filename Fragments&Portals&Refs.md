@@ -123,6 +123,7 @@ When we want to read a value from an input, we have to create a method to read t
   * As an exception, we can change the node value without use react
     * nameInputRef.current.value = '';
 * _Uncontrolled components_ because React doesn't control the element state
+* `Components` __don't admit ref__, only HTML tags
 
 ```js
 const AddUser = (props) => {
