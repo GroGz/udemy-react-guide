@@ -4,7 +4,7 @@
 
 React doesn't need node.js to be executed because it's executed at browsers, but we have some configurations and tools for development that needs node.js
 
-create-react-app+ is a development tool used to to create a development preview server, transformation and optimizations for production deployment and needs node to to initialize
+create-react-app+ is a development tool used to to create a development preview server, transformation and optimizations for production deployment, and needs it node to initialize
 
 <https://github.com/facebook/create-react-app+>
 
@@ -19,6 +19,14 @@ Then
 and app will be working at
 
 > localhost:3000
+
+To start in another port, we can modify _package.json_
+
+Windows
+> "start": "set PORT=3006 && react-scripts start",
+
+Linux
+> export PORT=3006 && react-scripts start
 
 If we are importing the project, and code exists
 

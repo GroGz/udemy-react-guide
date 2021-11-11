@@ -194,4 +194,119 @@ Button text _Add Goal_ is passed by _props.children_
 * Ref: Skip unnecessary _state_ to read values from HTML tag, as input.
   * _Uncontrolled components_ because React doesn't control the elemnt state
 
-[Fragments, Portals and "Refs](Fragments%26Portals%26Refs.md)
+[Fragments, Portals and Refs](Fragments%26Portals%26Refs.md)
+
+## Images
+
+We can import images as another react component
+
+```js
+import mealsImage from '../../assets/melas.jpg';
+
+const Header = props => {
+    return <>
+        <header>
+            <h1>ReactMeals</h1>
+            <button>Cart</button>
+        </header>
+        <div>
+            <img src={mealsImage} alt='A table with food'/>
+        </div>
+    </>
+```
+
+Another way to add images, inline images with svn
+
+```js
+const CartIcon = () => {
+  return (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      viewBox='0 0 20 20'
+      fill='currentColor'
+    >
+      <path d='M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z' />
+    </svg>
+  );
+};
+```
+
+[Food App](Section_11_Practice_Project_Food_Order.md)
+
+## Adding attributes to html elements
+
+Instead of add all the attributes one by one, we can use _destructuring_ operator
+
+```js
+const Input = props => {
+
+    return (<div className={classes.input}>
+        <label htmlFor={props.input.id}>{props.label}</label>
+        <input  {...props.input} />
+    </div>)
+}
+```
+
+> \<input id="amount" type="number" min="1" max="6" step="1" value="1">
+
+With the current implementation of MealItemForm, every `<Input />` receives the __same id__, as I do the following in the code I show in the previous lecture:
+
+```js
+<Input
+    label='Amount'
+    input={{
+        id: 'amount',
+        type: 'number',
+        min: '1',
+        max: '5',
+        step: '1',
+        defaultValue: '1',
+    }}
+/>
+```
+
+This works but it has __two major disadvantages__ which are not immediately obvious (and hence unfortunately slipped through during the recordings):
+
+Clicking on ANY label will always select the same, first input element - even if that's not the one belonging to the actual MeatItem
+
+Screenreaders won't be able to connect labels + inputs correctly (since all labels point at the same input)
+
+Everything shown in the videos works as shown and fixing this is optional, but since fixing this is easy, you might want to consider making the below adjustments:
+
+One possible workaround is to accept an id prop on the MealItemForm component and use that to create a unique id per `<Input />`:
+
+```js
+<Input
+    label='Amount'
+    input={{
+        id: 'amount_' + props.id, // this changed!
+        type: 'number',
+        min: '1',
+        max: '5',
+        step: '1',
+        defaultValue: '1',
+    }}
+/>
+```
+
+We just have to make sure that the id props is passed correctly to `<MealItemForm />` when that component is being used (i.e. inside of the MealItem component):
+
+> \<MealItemForm id={props.id} />
+
+Last but not least, for that to work, we should also pass id as a prop to MealItem, hence inside of the AvailableMeals component, we should create `<MealItem />` elements like this:
+
+```js
+<MealItem
+    id={meal.id} // this is new!
+    key={meal.id}
+    name={meal.name}
+    description={meal.description}
+    price={meal.price}
+/>
+```
+
+Again, this is all 100% optional when it comes to the general functionality of this demo app - everything works as shown in the videos without these changes as well. But for proper accessibility, you should consider making these adjustments.
+
+I did also update all the code snapshots to reflect these changes.
+
+[Food App](Section_11_Practice_Project_Food_Order.md)
