@@ -41,6 +41,29 @@ App to order food, with editable shopping cart
    3. [Step 5](#Step-5)
 6. `Cart`
    1. Cart/Cart
+   2. This element is rendered in a modal
+7. `Add modal`
+   1. Create a div to contain modal in _index.html_ __Portal__
+      1. \<div id="overlays"></div>
+   2. UI/Modal
+      1. component BackDrop
+      2. component Overlay
+      3. Modal.module.css (e)
+   3. Cart/Cart
+      1. Replace wrapper _div_ by `Modal`
+      2. Place Cart in another _component_
+         1. App.js
+      3. Cart.module.css (e)
+      4. Portal to place the modal components
+         1. ReactDOM.createPortal(\<Backdrop />, overlays )
+      5. [Step 6](#Step-6)
+8. `Functional Modal`
+   1. _state_ at App to hide/show `Cart`
+   2. `showModalHandler`function to `HeaderCartButton`
+   3. `showModalHandler`function to
+      1. `Backdrop`
+      2. `Cart.Modal.button`
+   4. Don't use `Context`becasue a modal can be used multiple times
 
 ### Step 2
 
@@ -57,3 +80,7 @@ App to order food, with editable shopping cart
 ### Step 5
 
 ![image](images/s11-addMeal.PNG)
+
+### Step 6
+
+![image](images/s11-cart.PNG)
