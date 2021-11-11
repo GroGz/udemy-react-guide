@@ -35,6 +35,7 @@ React - The Complete Guide (incl Hooks, React Router, Redux) Maximilian Schwarzm
   * <https://github.com/academind/react-complete-guide-code/tree/08-practice-project>
   * <https://github.com/academind/react-complete-guide-code/tree/09-fragments-portals-refs>
   * <https://github.com/academind/react-complete-guide-code/tree/10-side-effects-reducers-context-api>
+  * <https://github.com/academind/react-complete-guide-code/tree/11-practice-food-order-app>
 
 ## Sections
 
@@ -48,6 +49,7 @@ React - The Complete Guide (incl Hooks, React Router, Redux) Maximilian Schwarzm
 8. [Practice User Project Modal.md](Section_8_Practice_User_Project_Modal.md)
 9. [Fragments, Portals and "Refs"](Section_9_Fragments_Portals_Refs.md)
 10. [Side effects, Reducers and Context API](Section_10_Side_Effects_Reducers_Context_API.md)
+11. [Practice Project Food Order App](Section_11_Practice_Project_Food_Order.md)
 
 ## Docs
 
