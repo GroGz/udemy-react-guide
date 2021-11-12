@@ -106,6 +106,11 @@ App to order food, with editable shopping cart
         1. cartCtx.addItem({ ...item, amount: 1 });
     2. To remove implement `Cart` -> `cartItemAddHandler`
     3. `CartProvider` add _action_ remove code
+15. `Add animation`
+    1. `HeaderCartButton`
+    2. Cart bump every time add/remove an item
+    3. `useEffect` and `useState`
+       1. return a function with timer to reset _class_
 
 ### Step 2
 
