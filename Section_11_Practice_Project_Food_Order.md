@@ -56,7 +56,7 @@ App to order food, with editable shopping cart
       3. Cart.module.css (e)
       4. Portal to place the modal components
          1. ReactDOM.createPortal(\<Backdrop />, overlays )
-      5. [Step 6](#Step-6)
+      5. [Step 7](#Step-7)
 8. `Functional Modal`
    1. _state_ at App to hide/show `Cart`
    2. `showModalHandler`function to `HeaderCartButton`
@@ -89,9 +89,23 @@ App to order food, with editable shopping cart
           1. `Input`is a custom component, we have to use `useRef`
           2. amountInputRef.current.value to read the `Input` value
           3. `useState` to control form validation
-    3. Add element to `Context` in `MealItem` 
+    3. Add element to `Context` in `MealItem`
        1. Pass a prop method `addToCartHandler`
-       2. `MealItemForm` executes `addToCartHandler` 
+       2. `MealItemForm` executes `addToCartHandler`
+12. `Show cart items`
+    1. Add `Context`to `Cart`
+    2. Cart/CartItem (e)
+       1. CartItem.module.css
+    3. Add handlers methods `cartItemRemoveHandler` `cartItemAddHandler`
+    4. [Step 12](#Step-12)
+13. `Group cart items`
+    1. Modify `CartProvider` to group items
+    2. [Step 13](#Step-13)
+14. `Add and remove elements from cart`
+    1. To add implement `Cart` -> `cartItemAddHandler`
+        1. cartCtx.addItem({ ...item, amount: 1 });
+    2. To remove implement `Cart` -> `cartItemAddHandler`
+    3. `CartProvider` add _action_ remove code
 
 ### Step 2
 
@@ -109,6 +123,14 @@ App to order food, with editable shopping cart
 
 ![image](images/s11-addMeal.PNG)
 
-### Step 6
+### Step 7
 
 ![image](images/s11-cart.PNG)
+
+### Step 12
+
+![image](images/s11-cart-items.PNG)
+
+### Step 13
+
+![image](images/s11-cart-items-group.PNG)

@@ -175,7 +175,7 @@ console.log(numbers);
 console.log(double);
 ```
 
-## Template literlas (backstick)
+## Template literals (backstick)
 
 Text with dynamic content
 
@@ -205,3 +205,9 @@ Text with dynamic content
 
   * The first argument of a tag function contains an array of string values.
   * The remaining arguments are related to the expressions.
+
+## Bind functions
+
+TO DO
+
+[Practice Project Food Order App](Section_11_Practice_Project_Food_Order.md)
