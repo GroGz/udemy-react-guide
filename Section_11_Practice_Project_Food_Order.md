@@ -64,6 +64,34 @@ App to order food, with editable shopping cart
       1. `Backdrop`
       2. `Cart.Modal.button`
    4. Don't use `Context`becasue a modal can be used multiple times
+9. `Prepare Context  for Add/remove/check cart items`
+   1. This can be done from several places `AvailableMeals` and `Cart`, better use `Context`
+   2. `Context` will have __itemsList, totalAmount, addItemFn, removeItemFn__
+   3. store/cart-context
+   4. store/CartProvider
+      1. All the logic relative to `Cart`
+   5. `Context` will be used from Modal, HeaderCartButton and AvailableMeals
+   6. `App` is a good place to embed `CartProvider` instead a void `Fragment`
+   7. To initiate the context, we start the value from our `CartProvider`
+      1. \<CartContext.Provider value={cartContext} >{props.children}</CartContext.Provider>
+10. `Check cart items`
+    1. To access `Context` the data from `HeaderCartButton`
+    2. `useContext(CartContext)`
+          1. > import CartContext from '../../store/cart-context';
+11. `Add item`
+    1. `useReducer` to control the state in `CartProvider`
+       1. > const [cartState, dispatchCartAction] = useReducer(cartReducer, defaultCartState)
+          1. `dispatchCartAction` executes `cartReducer` with safety
+          2. `defaultCartState` initial value
+          3. `cartState` last updated state
+    2. Add a call in MealItemForm `submitHandler` to enable action
+       1. `useRef` to connect form element
+          1. `Input`is a custom component, we have to use `useRef`
+          2. amountInputRef.current.value to read the `Input` value
+          3. `useState` to control form validation
+    3. Add element to `Context` in `MealItem` 
+       1. Pass a prop method `addToCartHandler`
+       2. `MealItemForm` executes `addToCartHandler` 
 
 ### Step 2
 

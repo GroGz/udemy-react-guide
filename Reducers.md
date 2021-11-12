@@ -4,7 +4,7 @@ Sometimes `useState`is not enough, because we have multiple _states_, multiple w
 
 For these cases, we have another hook, `useReducer`.
 
-This is are two examples of states that depends in other states, and as we see see, this has some problems (`prevState`).
+This is are two examples of states that depends in other states, and as we see, this has some problems (`prevState`).
 
 ```js
 const passwordChangeHandler = (event) => {
@@ -28,7 +28,7 @@ const validateEmailHandler = () => {
 
 * `state` is the snapshot used in the component for the re-evaluation/re-render cycle
 * `dispatchFn` function that can be used to dispatch a new action (i.e. trigger a state update)
-* `reducerFn` function launched by `disptchFn`, it recieves the last state _snapshot_and returns the __new updated state__
+* `reducerFn` function launched by `disptchFn`, it receives the last state _snapshot_ and returns the __new updated state__
 * `initialState` Additional info
 * `initFn` Auxiliar function
 
