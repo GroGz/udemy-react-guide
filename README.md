@@ -17,6 +17,12 @@ React - The Complete Guide (incl Hooks, React Router, Redux) Maximilian Schwarzm
 * Javascript online vm
   * <https://jsbin.com/?js,console>
 
+* Javascript primitives vs references
+  * <https://academind.com/tutorials/reference-vs-primitive-values>
+
+* Javascript closures
+  * <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures>
+
 * Styled components (Css)
   * <https://styled-components.com/>
 
@@ -36,6 +42,7 @@ React - The Complete Guide (incl Hooks, React Router, Redux) Maximilian Schwarzm
   * <https://github.com/academind/react-complete-guide-code/tree/09-fragments-portals-refs>
   * <https://github.com/academind/react-complete-guide-code/tree/10-side-effects-reducers-context-api>
   * <https://github.com/academind/react-complete-guide-code/tree/11-practice-food-order-app>
+  * <https://github.com/academind/react-complete-guide-code/tree/12-a-look-behind-the-scenes>
 
 ## Sections
 
@@ -50,6 +57,7 @@ React - The Complete Guide (incl Hooks, React Router, Redux) Maximilian Schwarzm
 9. [Fragments, Portals and "Refs"](Section_9_Fragments_Portals_Refs.md)
 10. [Side effects, Reducers and Context API](Section_10_Side_Effects_Reducers_Context_API.md)
 11. [Practice Project Food Order App](Section_11_Practice_Project_Food_Order.md)
+12. [Behind the Scenes and Optimization](Section_12_Behind_The_Scenes_Optimizatiion.md)
 
 ## Docs
 
@@ -64,3 +72,4 @@ React - The Complete Guide (incl Hooks, React Router, Redux) Maximilian Schwarzm
 9. [Reducers](Reducers.md)
 10. [Context API](ContextApi.md)
 11. [Hooks](Hooks.md)
+12. [Behind Scenes](BehindScenes.md)
